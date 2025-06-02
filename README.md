@@ -77,8 +77,8 @@ The root folder contains a version of the bot with a minimal Flask server to kee
     - Start Command:
        `python dailyquote.py`
 4. 🟢 Prevent Idle Shutdowns (Optional)
-- Render's free tier spins down after inactivity.
-- To keep the bot alive: 
-  - Use UptimeRobot
-  - Add your Render URL as an HTTP monitor
-  - Set it to ping every 5 minutes
+    - Render's free tier spins down after inactivity.
+    - To keep the bot alive: 
+      - Use UptimeRobot
+      - Add your Render URL as an HTTP monitor
+      - Set it to ping every 5 minutes
