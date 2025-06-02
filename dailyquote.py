@@ -42,7 +42,7 @@ async def schedule_daily_quote():
     ist = pytz.timezone('Asia/Kolkata')
     now = datetime.now(ist)
 
-    if now.hour == 12 and now.minute in (38, 39):
+    if now.hour == 13 and now.minute in (5, 6):
         today = now.date()
         if last_sent_date != today:
             channel = bot.get_channel(CHANNEL_ID)
