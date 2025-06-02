@@ -22,16 +22,17 @@ The bot fetches quotes from [ZenQuotes API](https://zenquotes.io/).
 
 # This project includes:
 
-## ✅ The **Normal version** of code which is available in (`daily-quotes-bot/`) that contains the code, env and requirements file. - Ideal for running locally and testing.
-## 🚀 A **deployable version** (in the root directory) with a Flask keep-alive server — suitable for deployment on platforms like **Render**.
+# ✅ The **Normal version** of code which is available in (`daily-quotes-bot/`) that contains the code, env and requirements file. - Ideal for running locally and testing.
+
+# 🚀 A **deployable version** (in the root directory) with a Flask keep-alive server — suitable for deployment on platforms like **Render**.
 
 ##▶️ Instructions for Testing on Local Machine
-### 1. Clone the Repository
+## 1. Clone the Repository
 ```bash
 git clone https://github.com/ziac007/daily-quotes-discord-bot.git
-cd daily-quotes-discord-bot/daily-quotes-bot
+cd daily-quotes-discord-bot/daily-quotes-bot ```
 
-### 2. Setup Virtual Environment (Optional)
+## 2. Setup Virtual Environment (Optional)
 
 ### 3. Install Dependencies 
 ```bash pip install -r requirements.txt
