@@ -5,8 +5,6 @@ import pytz
 from datetime import datetime
 import os
 from dotenv import load_dotenv
-from keepalive import keep_alive
-
 
 load_dotenv()
 
@@ -41,8 +39,9 @@ async def schedule_daily_quote():
     global last_sent_date
     ist = pytz.timezone('Asia/Kolkata')
     now = datetime.now(ist)
-
-    if now.hour == 16 and now.minute in (15, 16):
+    
+    #Specify your time here
+    if now.hour == 7 and now.minute in (0, 1):
         today = now.date()
         if last_sent_date != today:
             channel = bot.get_channel(CHANNEL_ID)
@@ -54,5 +53,4 @@ async def schedule_daily_quote():
             else:
                 print(f"[ERROR] Channel with ID {CHANNEL_ID} not found.")
 
-keep_alive()
 bot.run(TOKEN)
