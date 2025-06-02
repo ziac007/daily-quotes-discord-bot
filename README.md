@@ -9,7 +9,7 @@
 A simple Discord bot that sends an inspirational quote daily at a specified time to your Discord channel.  
 The bot fetches quotes from [ZenQuotes API](https://zenquotes.io/).
 <p align="center">
-  <img src="images/zenquoteslogo.png" alt="logo" width="200"/>
+  <img src="images/zenquoteslogo.png" alt="logo" width="400"/>
 </p>
 
 <br>
@@ -81,8 +81,4 @@ The root folder contains a version of the bot with a minimal Flask server to kee
     - To keep the bot alive: 
       - Use UptimeRobot
       - Add your Render URL as an HTTP monitor
-<<<<<<< HEAD
       - Set it to ping every 5 minutes
-=======
-      - Set it to ping every 5 minutes
->>>>>>> 18ea5d8207d0970648b351c34f56aa046e8f88dd
