@@ -82,3 +82,13 @@ The root folder contains a version of the bot with a minimal Flask server to kee
       - Use UptimeRobot
       - Add your Render URL as an HTTP monitor
       - Set it to ping every 5 minutes
+
+
+<br>
+
+## ⚠️ Known Issue: Warning Message in Render Logs while Deployment
+When the bot is deployed, you may see the following warning in the logs:
+
+
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+
