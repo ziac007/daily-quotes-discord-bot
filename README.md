@@ -81,4 +81,8 @@ The root folder contains a version of the bot with a minimal Flask server to kee
     - To keep the bot alive: 
       - Use UptimeRobot
       - Add your Render URL as an HTTP monitor
+<<<<<<< HEAD
       - Set it to ping every 5 minutes
+=======
+      - Set it to ping every 5 minutes
+>>>>>>> 18ea5d8207d0970648b351c34f56aa046e8f88dd
