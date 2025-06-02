@@ -63,20 +63,20 @@ pip install -r requirements.txt
 
 ## 🚀 Instructions for Deployment on Render
 The root folder contains a version of the bot with a minimal Flask server to keep the app alive on free Render instances.
-🌐 1. Push Code to GitHub
-⚙️ 2. Setup Environment Variables
+1. 🌐 Push Code to GitHub
+2. ⚙️ Setup Environment Variables
     - In the Render dashboard:
     - Add a new 'Web Service'
     - Use your 'GitHub repo'
     - Set Environment Variables:
       - `TOKEN:` your Discord bot token
       - `CHANNEL_ID:` your Discord channel ID
-🔧3. Configure Build & Start
+3. 🔧 Configure Build & Start
     - Build Command
         `pip install -r requirements.txt`
     - Start Command:
        `python dailyquote.py`
-🟢 4. Prevent Idle Shutdowns (Optional)
+4. 🟢 Prevent Idle Shutdowns (Optional)
 - Render's free tier spins down after inactivity.
 - To keep the bot alive: 
   - Use UptimeRobot
