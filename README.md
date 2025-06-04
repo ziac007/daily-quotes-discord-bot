@@ -75,7 +75,7 @@ The root folder contains a version of the bot with a minimal Flask server to kee
     - Build Command
         `pip install -r requirements.txt`
     - Start Command:
-       `gunicorn keepalive:app --bind 0.0.0.0:8080`
+       `gunicorn dailyquote:app --bind 0.0.0.0:8080`
 4. 🟢 Prevent Idle Shutdowns (Optional)
     - Render's free tier spins down after inactivity.
     - To keep the bot alive: 
