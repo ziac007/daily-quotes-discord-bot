@@ -93,6 +93,8 @@ The root folder contains a version of the bot with a minimal Flask server to kee
 
 
 <br>
+
+
 ## ⚠️ Known Issue: Warning Message in Render Logs
 When the bot is deployed, you may see the following warning in the logs:
 
@@ -100,3 +102,4 @@ WARNING: This is a development server. Do not use it in a production deployment.
 
 This can be safely ignored if you’re running the bot for personal/non-production use with gunicorn.
 
+<br>
