@@ -33,7 +33,7 @@ The bot fetches quotes from [ZenQuotes API](https://zenquotes.io/).
 - ✅ The **Normal version** of code which is available in (`daily-quotes-bot/`) that contains the code, env and requirements file. - Ideal for running locally and testing.
 
   
-- 🚀 A **deployable version** (in the root directory) with a Flask keep-alive server — suitable for deployment on platforms like **Render**.
+- 🚀 A **Deployable version** (in the root directory) with a Flask keep-alive server — suitable for deployment on platforms like **Render**.
 
 <br>
 
@@ -76,19 +76,27 @@ The root folder contains a version of the bot with a minimal Flask server to kee
         `pip install -r requirements.txt`
     - Start Command:
        `gunicorn dailyquote:app --bind 0.0.0.0:8080`
-4. 🟢 Prevent Idle Shutdowns (Optional)
+4. 🟢 Prevent Idle Shutdowns (Optional but recommended)
     - Render's free tier spins down after inactivity.
     - To keep the bot alive: 
-      - Use UptimeRobot
+      - Use [UptimeRobot](https://uptimerobot.com/)
       - Add your Render URL as an HTTP monitor
       - Set it to ping every 5 minutes
 
 
 <br>
 
-## ⚠️ Known Issue: Warning Message in Render Logs while Deployment
+## 📌 Deployment Notes
+- ✅ Successfully deployed on **Render's free tier instance**
+- ✅ Tested for **24 hours continuously** with **UptimeRobot** pinging every **5 seconds** to prevent idle shutdown
+- ✅ On **paid Render instances**, Flask keep-alive is **not needed** — the bot runs continuously without any downtime
+
+
+<br>
+## ⚠️ Known Issue: Warning Message in Render Logs
 When the bot is deployed, you may see the following warning in the logs:
 
-
 WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+
+This can be safely ignored if you’re running the bot for personal/non-production use with gunicorn.
 
